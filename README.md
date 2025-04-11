@@ -1,6 +1,6 @@
 **Data Structures and Algorithms Course Progress**
 Course Overview
-This repository tracks my progress through a comprehensive Data Structures and Algorithms course. The curriculum covers fundamental computer science concepts with practical coding exercises and LeetCode-style interview problems.
+This repository tracks my progress through a comprehensive Data Structures and Algorithms course. The course covers fundamental data structures concepts with practical coding exercises and LeetCode-style interview problems.
 
 **Course Structure**
 Core Sections:
