@@ -106,7 +106,7 @@ public class DoublyLinkedList{
             }
         }else{
             temp = tail;
-            for(int i = length; i > index; i--){
+            for(int i = length - 1; i > index; i--){
                 temp = temp.prev;
             }
         }
