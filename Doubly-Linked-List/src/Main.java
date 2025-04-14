@@ -1,25 +1,22 @@
 public class Main {
     public static void main(String[] args) {
-        DoublyLinkedList myDLL = new DoublyLinkedList(7);
+        DoublyLinkedList myDLL = new DoublyLinkedList(0);
         
-        myDLL.getHead();
-        myDLL.getTail();
-        myDLL.getLength();
+        myDLL.append(1);
+        myDLL.append(2);
+        myDLL.append(3);
+        myDLL.append(4);
+        
         myDLL.printList();
-        
         System.out.println();
-        myDLL.append(8);
-        myDLL.printList();
-        myDLL.getLength();
-        
+        myDLL.set(3,50);
         System.out.println();
-        myDLL.removeLast();
         myDLL.printList();
-        myDLL.getLength();
         
-        System.out.println();
-        myDLL.prepend(6);
+        System.out.println("\n" + myDLL.get(3).value + "\n");
+        
+        myDLL.insert(3,40);
         myDLL.printList();
-        myDLL.getLength();
+        
    }
 }
