@@ -1,4 +1,4 @@
-ublic class BinarySearchTree{
+public class BinarySearchTree{
     
     Node root;
     
