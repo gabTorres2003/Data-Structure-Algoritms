@@ -1,18 +1,17 @@
-public class BinarySearchTree{
-    
+public class BinarySearchTree {
     Node root;
-    
-    class Node{
+
+    class Node {
         int value;
         Node left;
         Node right;
-        
-        Node(int value){
+
+        Node(int value) {
             this.value = value;
         }
     }
 
-    public boolean insert (int value){
+    public boolean insert(int value) {
         Node newNode = new Node(value);
         if (root == null) {
             root = newNode;
@@ -21,13 +20,13 @@ public class BinarySearchTree{
         Node temp = root;
         while (true) {
             if (newNode.value == temp.value) return false;
-            if (newNode.value < temp.value){
+            if (newNode.value < temp.value) {
                 if (temp.left == null) {
                     temp.left = newNode;
                     return true;
                 }
                 temp = temp.left;
-            }else{
+            } else {
                 if (temp.right == null) {
                     temp.right = newNode;
                     return true;
@@ -36,17 +35,16 @@ public class BinarySearchTree{
             }
         }
     }
-    public boolean contains(int value){
-        if(root == null) return false;
+
+    public boolean contains(int value) {
+        if (root == null) return false;
         Node temp = root;
-        while(temp != null){
-            if (value < temp.value){
+        while (temp != null) {
+            if (value < temp.value) {
                 temp = temp.left;
-            }else{
-                if(value > temp.value){
-                    temp = temp.right;
-                }
-            }else{
+            } else if (value > temp.value) {
+                temp = temp.right;
+            } else {
                 return true;
             }
         }
